@@ -4,6 +4,8 @@ import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { RolesModule } from './roles/roles.module';
+import { TypesUserModule } from './types-user/types-user.module';
 import * as path from 'path';
 
 
@@ -25,6 +27,8 @@ import * as path from 'path';
       synchronize: true,
     }),
     UsersModule,
+    RolesModule,
+    TypesUserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
