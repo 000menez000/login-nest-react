@@ -13,6 +13,7 @@ TAREFA 1
     ok - Criar DTOs com as verificações para as rotas específicas.
     
 TAREFA 2
+    - Ao retornar dados de usuários, usar dto para retornar apenas informações permitidas
     - Criar tabela de typesUser (admin, common...)
     - Criar tabela de roles (lista de regras de usuário)
     - Criar tabela relacionando o tipo de usuário com as regras especificas...
