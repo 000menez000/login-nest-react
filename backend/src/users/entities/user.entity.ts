@@ -1,26 +1,29 @@
 import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 
-@Entity()
+@Entity('users')
 export class UsersEntity {
     @PrimaryGeneratedColumn()
     id:number;
 
-    @Column()
+    @Column({ nullable: false })
     username:string;
 
-    @Column()
+    @Column({ nullable: false })
     email:string;
 
-    @Column()
+    @Column({ nullable: false })
+    password:string;
+
+    @Column({ nullable: false })
     cpf:string;
 
-    @Column()
+    @Column({ nullable: true })
     phone:string;
 
-    @Column()
+    @Column({ default:1, nullable: false })
     typeUser_id:number;
 
-    @Column({ default:true })
+    @Column({ default:true, nullable: false })
     active:boolean;
 
     @CreateDateColumn()

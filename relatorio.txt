@@ -1,0 +1,16 @@
+BACKEND
+- criei entidade users.
+- criei service users.
+- criei controller users.
+- criei conexão com banco de dados.
+- criei configuração do banco de dados.
+
+TAREFA 1
+- anotar sobre: 
+    ok - Criar repositório dentro do arquivo service.
+    ok - Utilizar service dentro do controller.
+    ok - Startar backend.
+    ok - Testar as rotas no Postman.
+    ok - Criar DTOs com as verificações para as rotas específicas.
+    
+TAREFA 2
