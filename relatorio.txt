@@ -5,6 +5,19 @@ BACKEND
 - criei conexão com banco de dados.
 - criei configuração do banco de dados.
 
+ETAPAS
+    ok - configuração do projeto
+    ok - configuração do banco de dados
+    ok - definição das tabelas
+    - criar rotas das entidades
+    - adicionar verificações necessárias
+    - JWT para controlar acesso as rotas com base no tipo do usuário e suas regras
+    - criar esquema de autenticação
+    - criar 3 tipos de usuário: developer, admin, common:
+        developer - deve ter acesso total as rotas
+        admin - terá acesso de administrador a rotas específicas do departamento
+        common - terá acesso de usuário comum e serviços limitados
+
 TAREFA 1
     ok - Criar repositório dentro do arquivo service.
     ok - Utilizar service dentro do controller.
@@ -13,8 +26,13 @@ TAREFA 1
     ok - Criar DTOs com as verificações para as rotas específicas.
     
 TAREFA 2
-    - Ao retornar dados de usuários, usar dto para retornar apenas informações permitidas
-    - Criar tabela de typesUser (admin, common...)
-    - Criar tabela de roles (lista de regras de usuário)
+    ok - Ao retornar dados de usuários, usar dto para retornar apenas informações permitidas
+    ok - Criar tabela de typesUser (admin, common...)
+    ok - Criar tabela de roles (lista de regras de usuário)
     - Criar tabela relacionando o tipo de usuário com as regras especificas...
     
+TAREFA 3
+    - Documentar sobre os DTOs
+    - Documentar sobre os decorators TS
+    - Implementar migrations para criar dados padrão
+    - Documentar sobre migrations
