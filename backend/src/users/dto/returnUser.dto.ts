@@ -11,5 +11,5 @@ export class ReturnUserDto {
         this.username = usersEntity.username;
         this.email = usersEntity.email;
         this.active = usersEntity.active;
-    }
-} 
+    };
+};
