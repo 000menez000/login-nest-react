@@ -32,7 +32,7 @@ TAREFA 2
     - Criar tabela relacionando o tipo de usuário com as regras especificas...
     
 TAREFA 3
-    - Documentar sobre os DTOs
+    ok - Documentar sobre os DTOs
     - Documentar sobre os decorators TS
     - Implementar migrations para criar dados padrão
     - Documentar sobre migrations

@@ -6,8 +6,9 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { RolesModule } from './roles/roles.module';
 import { TypesUserModule } from './types-user/types-user.module';
-import * as path from 'path';
+import { PATH_ENITIES, PATH_MIGRATIONS } from './config';
 
+console.log(PATH_MIGRATIONS);
 
 @Module({
   imports: [
@@ -21,10 +22,9 @@ import * as path from 'path';
       username: process.env.LOCAL_USERNAME,
       password: process.env.LOCAL_PASSWORD,
       database: process.env.LOCAL_DATABASE,
-      entities: [path.resolve(__dirname, '**', '*.entity{.ts,.js}')],
-      migrations: [],
-      migrationsRun: false,
-      synchronize: true,
+      entities: [PATH_ENITIES],
+      migrations: [PATH_MIGRATIONS],
+      migrationsRun: true,
     }),
     UsersModule,
     RolesModule,
